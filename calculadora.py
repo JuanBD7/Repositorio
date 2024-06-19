@@ -24,7 +24,12 @@ while True:
         print("la multiplicacion es",num1*num2)
         break;
     if valor == 4:
-        print("la division es",num1/num2)
+        try:
+
+            print("la division es",num1/num2)
+        
+        except ZeroDivisionError:
+            print('Operación inválida ya que denominador es 0')
         break;
     if valor == 5:
         print("la suma es ",num1+num2+num3)
